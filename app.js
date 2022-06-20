@@ -22,7 +22,6 @@ var uiController = (function(){
     }
 })();
 
-
 // Санхүүтэй ажиллах контроллер
 var financeController = (function(){
     var Income = function(id, desc, value) {
@@ -54,7 +53,7 @@ var financeController = (function(){
 
             var item, id;
 
-            if(data.items[type].lenght === 0) id = 1;
+            if(data.items[type].length === 0) id = 1;
             else {
                id = data.items[type][data.items[type].length - 1].id + 1;
             }
